@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+#landing{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121124;
+}
+#landing article:nth-child(1){
+position: relative;
+height: 40vh;
+width: 400px;
+max-width: 80%;
+}
+#button{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 120px;
+    height: 120px;
+    animation:bouton forwards 0.5s;
+    z-index: 2;
+}
+#button2{
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 40px;
+    height:40px;
+    animation:bouton1 forwards 0.5s;
+    z-index: 2;
+}
+#button:hover,#button2:hover{
+    cursor:pointer;
+}
+@keyframes bouton {
+    from{
+opacity: 0;
+transform: rotate(0deg);
+    }to{
+opacity: 1;
+transform: rotate(360deg);
+    }
+}
+@keyframes bouton1 {
+    from{
+opacity: 0;
+transform: rotate(0deg);
+    }to{
+opacity: 1;
+transform: rotate(360deg);
+    }
+}
+/*dashboard*/
+.dashboard{
+    position: absolute;
+    width: 100px;
+    height: 60vh;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: dash linear forwards 0.5s;
+    transform: translateY(-100px);
+}
+@keyframes dash {
+    0%{
+        transform: translateY(-100px);
+    }100%{
+        transform: translateY(0);
+    }
+}
+.dashboard div{
+    height: 80px;
+    width: 80px;
+}
+/*sect2*/
+#sect2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#sect2 article{
+    height: 50vh;
+    width: 300px;
+    background-color: #121124;
+    border-radius: 5px;
+}
+/*sect3*/
+#sect3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#sect3 article:nth-child(1){
+    position: relative;
+    width: 60%;
+    height: 120vh;
+    background-image: url('./images/organiz.jpg');
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.voile{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #121124;
+    content:'';
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.border{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    z-index: 2;
+}
+.logo{
+    height: 220px;
+    width: 220px;
+}
+.rightBloc{
+    position: relative;
+    width: 40%;
+    height: 120vh;
+    background-color: #121124;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightBloc div{
+    width: 100%;
+    height: 48%;
+}
+.rightBloc span{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+}
+/*sect4*/
+#sect4{
+height: 100vh;
+width: 100%;
+}
