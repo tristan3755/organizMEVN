@@ -83,6 +83,7 @@ transform: rotate(360deg);
     justify-content: space-evenly;
     animation: dash linear forwards 0.5s;
     transform: translateY(-100px);
+    z-index: 1;
 }
 @keyframes dash {
     0%{
@@ -94,6 +95,9 @@ transform: rotate(360deg);
 .dashboard div{
     height: 120px;
     width: 120px;
+}
+.dashboard div:hover{
+    cursor: pointer;
 }
 /*sect2*/
 #sect2{
@@ -232,4 +236,73 @@ transform: translateX(0);
     height: 100vh;
     width: 100%;
     background-color: #0A0525;
+}
+/*inscription*/
+.inscription{
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #0A0525;
+    z-index: 3;
+    animation: inscription linear forwards 0.8s;
+    transform: translateY(-100vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes inscription{
+100%{
+        transform: translateY(0vh);
+    }
+}
+.fermeture{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+@keyframes boutonFermeture {
+    from{
+transform: rotate(0deg);
+    }to{
+transform: rotate(360deg);
+    }
+}
+.fermeture:hover{
+    cursor: pointer;
+    animation: boutonFermeture linear forwards 0.5s;
+}
+#formInscription{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#formInscription input{
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid whitesmoke;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    color: white;
+}
+#formInscription button{
+    width: 100px;
+    height: 50px;
+    background-color:#f53b57;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    transition: ease-in-out 0.5s;
+}
+#formInscription button:hover{
+    background-color:#05c46b;
+    cursor: pointer;
+    transform: scale(1.1);
 }
