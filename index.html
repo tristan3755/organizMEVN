@@ -389,10 +389,10 @@
 
 
 <form id="formInscription">
-<input type="text" name="nomEntreprise" placeholder="le nom de l'entreprise" required>
-<input type="text" name="ville" placeholder="votre ville" required>
-<input type="text" name="SIRET" placeholder="votre numéro de siret" required>
-<input type="password" v-model="pass1"name="password" placeholder="mot de passe" required>
+<input type="text"  v-model="entreprise" id="entrepriseName" placeholder="le nom de l'entreprise" required>
+<input type="text" v-model="ville" id="cities" placeholder="votre ville" required>
+<input type="text"  v-model="siret" id="SIRET" placeholder="votre numéro de siret" required>
+<input type="password" v-model="pass1" id="password"  placeholder="mot de passe" required>
 <input type="password" v-model="pass2" name="passwordConfirm" placeholder="concordance du mot de passe" required>
 <button type="submit" v-on:click='preventDefault'>s'inscrire</button>
 </form>
